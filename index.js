@@ -14,15 +14,15 @@ app.use(express.json());
 app.post("/add-contact", async (req, res) => {
   const { email, firstname, lastname, type } = req.body;
 
-  if (!email) {
-    return res.status(400).json({ error: "Email is required" });
-  }
+  // if (!email) {
+  //   return res.status(400).json({ error: "Email is required" });
+  // }
 
-  if (!type || !["Early Access", "Early Bird Perks", "Updates"].includes(type)) {
-    return res.status(400).json({ 
-      error: "Type is required and must be one of: Early Access, Early Bird Perks, Updates" 
-    });
-  }
+  // if (!type || !["Early Access", "Early Bird Perks", "Updates"].includes(type)) {
+  //   return res.status(400).json({ 
+  //     error: "Type is required and must be one of: Early Access, Early Bird Perks, Updates" 
+  //   });
+  // }
 
   try {
     // const response = await axios.post(
